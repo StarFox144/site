@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#БийКомуніста</title>
+    <link rel="icon" href="4R.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8f1010;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #000000;
+            color: #000000;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 10px;
+            position: relative;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #0a516d;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #362d2d;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+        .form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(45deg, #330808, 
+  #3a2c09);
+  border-radius: 2.5em;
+  padding: 30px;
+  width: 300px;
+  height: 350px;
+}
+
+.form::before {
+  content: '';
+  background-image: linear-gradient(45deg, #ff0000, 
+  #ffb700);
+  height: 358px;
+  width: 309px;
+  position: absolute;
+  margin-top: -34px;
+  margin-left: px;
+  z-index: -1;
+  border-radius: 2.7em;
+}
+
+.button {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  background: #ff5900;
+  color: black;
+  padding: 0.7em 5.5em;
+  display: flex;
+  align-items: center;
+  border: 2px solid #66da4300;
+  border-radius: 5em;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 2px solid #ff5900;
+  background: #00000000;
+  color: #ff5900;
+}
+
+.button:active {
+  border: 2px solid #66da4300;
+  background: #ff5900;
+  color: black;
+}
+
+.input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: white;
+}
+
+.input::placeholder {
+  color: #9b725b;
+}
+
+.textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: calc(100% - 10px);
+  padding: 8px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+}
+
+.textarea::placeholder {
+  color: #9b725b;
+}
+
+.textarea:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: white;
+}
+ .formalya{
+    display: flex;
+    justify-content: center;
+    margin: 5% 5% 5% 5%;
+ }
+        </style>
+        <body>
+            <header>
+                <h1>Тури по всій Європі</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="Main.html">Головна</a></li>
+                    <li><a href="about us.html">Про нас</a></li>
+                    <li><a href="tours.html">Подорожі</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="register.html">Реєстрація</a></li>
+                </ul>
+            </nav>
+            <div class="formalya">
+                <form class="form">
+                    <input class="input" type="text" name="name" placeholder="Name">
+                    <input class="input" type="text" name="email" placeholder="E-Mail I.D.">
+                    <input class="input" type="password" name="password" placeholder="Password"> <!-- Замініть textarea на input з типом password -->
+                    <center><button class="button" type="submit">Ok</button></center>
+                  </form>
+                  
+                  
+            </div>
+            
+         <main>
+
+         </main>
+
+          <script>
+              const purchaseButton = document.querySelector('.button');
+
+purchaseButton.addEventListener('click', () => {
+   alert("Технічний ремонт");
+});
+
+          </script>
+         <footer>
+            &copy; 2023 Tvereza Chereshnya
+        </footer>
+        </body>
+</html>

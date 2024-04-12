@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#БийКомуніста</title>
+    <link rel="icon" href="4R.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8f1010;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #000000;
+            color: #000000;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 10px;
+            position: relative;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #0a516d;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #362d2d;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+        .knopka{
+            display: flex;
+            justify-content: center;
+        }
+        button {
+ position: relative;
+ border: none;
+ background: transparent;
+ padding: 0;
+ cursor: pointer;
+ outline-offset: 4px;
+ transition: filter 250ms;
+ user-select: none;
+ touch-action: manipulation;
+}
+
+.shadow {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: hsl(0deg 0% 0% / 0.25);
+ will-change: transform;
+ transform: translateY(2px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.front {
+ display: block;
+ position: relative;
+ padding: 12px 27px;
+ border-radius: 12px;
+ font-size: 1.1rem;
+ color: white;
+ background: hsl(345deg 100% 47%);
+ will-change: transform;
+ transform: translateY(-4px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+button:hover {
+ filter: brightness(110%);
+}
+
+button:hover .front {
+ transform: translateY(-6px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+ transform: translateY(-2px);
+ transition: transform 34ms;
+}
+
+button:hover .shadow {
+ transform: translateY(4px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+ transform: translateY(1px);
+ transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+ outline: none;
+}
+
+     .img-container{
+        display: flex;
+        justify-content:center;
+
+     }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Тури по всій Європі</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Main.html">Головна</a></li>
+            <li><a href="about us.html">Про нас</a></li>
+            <li><a href="tours.html">Подорожі</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="register.html">Реєстрація</a></li>
+        </ul>
+    </nav>
+<main>
+    <h1 style="margin-left: 2%;">Париж</h1>
+    <div class="main-container">
+        <div class="img-container">
+         <img src="Paris.jpg">
+        </div> 
+        <div class="opis-container">
+        <h2>Ласкаво просимо до Парижа - міста кохання, мистецтва та елегантності!
+            <br>
+            Маршрут туру:
+       </h2>
+            <ol>
+                <li>
+                    Ейфелева вежа <br>
+                    Наша подорож розпочнеться на одній з найвідоміших та найромантичніших споруд світу - Ейфелевій вежі. 
+                    Ви підніметесь на верхній рівень вежі та насолодитесь чудовими видами на місто.
+                 </li>
+                 <li>
+                    Шамп-Елізе <br>
+                    Від Ейфелевої вежі ми вирушимо в сторону одного з найпрестижніших бульварів Парижа, Шамп-Елізе. 
+                    Тут ви зможете відвідати розкошні бутіки, кав'ярні та ресторани.
+                </li>
+                <li>
+                    Тріумфальна арка <br>
+                    Пройшовши вздовж Шамп-Елізе, ми дістанемося до іконічної Тріумфальної арки. 
+                    Ви зможете піднятися на верхній рівень арки та споглянути величність Парижу з висоти пташиного польоту.
+                 
+                </li>
+                <li>
+                    Лувр <br>
+                    На нашому маршруті ми відвідаємо одне з найвидатніших мистецьких музеїв світу - Лувр.
+                     Тут ви зможете побачити шедеври живопису, скульптури та історичні артефакти.
+                </li>
+                <li>
+                    Монмартр і базиліка Сакре-Кер <br>
+                    Після Лувру ми направимося до мальовничого району Монмартр. 
+                    Ви підніметесь на пагорб та відвідаєте базиліку Сакре-Кер, звідки відкриються захоплюючі види на місто.
+                </li>
+                <li>
+                    Сена та прогулянка берегом <br>
+                    Ми завершимо наш тур прогулянкою вздовж річки Сена. 
+                    Ви побачите такі архітектурні шедеври, як Катедраль Нотр-Дам та Музей Орсе, і зможете насолодитися красою паризьких набережних.
+                 
+                </li>
+                <li>
+                    Вуличні кафе Монмартру <br>
+                    Маршрут завершиться в одному з багатьох чудових вуличних кафе Монмартру, 
+                    де ви зможете скуштувати справжню французьку кухню та відзначити вашу незабутню подорож.
+                </li>
+            </ol>
+            <h3>
+                Цей екскурсійний тур приведе вас через найвидатніші архітектурні та культурні скарби Парижу, 
+                розкаже історію цього міста і допоможе вам відчути його неповторну атмосферу. 
+                      <br>
+                      Насолоджуйтесь вашими враженнями від цього чудового міста!
+
+             </h3>
+        </div>   
+        <div class="knopka">
+            <button id="buttonman">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text"> Ядерка на Москву <br> (Оплата туру)
+                </span>
+              </button>
+        </div>
+        </div>
+        
+    
+</main>
+<footer>
+    &copy; 2023 Tvereza Chereshnya
+</footer>
+<script> 
+function Chort(){
+    window.location.href = "payment.html";
+}
+document.getElementById("buttonman").onclick = Chort;
+</script>
+</body>
+</html>
